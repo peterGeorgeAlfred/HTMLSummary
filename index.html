@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Tags Guide...Eng/Peter George</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f9;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: #2c3e50;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .tag-example {
+      background-color: #e8f0fe;
+      border-left: 5px solid #2196f3;
+      padding: 10px;
+      margin-bottom: 20px;
+      font-family: "Courier New", monospace;
+    }
+
+    .rendered-output {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin-top: 5px;
+      font-family: Arial, sans-serif;
+    }
+
+    .definition {
+      background-color: #fff9c4;
+      /* Light yellow background */
+      padding: 5px;
+      border-radius: 4px;
+      display: inline-block;
+    }
+
+    a {
+      color: #2196f3;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #777;
+      font-size: 0.9em;
+    }
+
+    .headerTitle {
+      background-color: #c4ffdb;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>HTML Tags Guide</h1>
+
+    <h2 class="headerTitle">1. HTML Structure Tags</h2>
+    <p>
+      <strong>&lt;html&gt;...&lt;/html&gt;</strong> -
+      <span class="definition">Defines the entire HTML document.</span>
+    </p>
+    <div class="tag-example">
+      <code>
+          &lt;html&gt;<br />
+          &nbsp;&nbsp;&lt;head&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;My First Web
+          Page&lt;/title&gt;<br />
+          &nbsp;&nbsp;&lt;/head&gt;<br />
+          &nbsp;&nbsp;&lt;body&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Welcome to My Page!&lt;/h1&gt;<br />
+          &nbsp;&nbsp;&lt;/body&gt;<br />
+          &lt;/html&gt;
+        </code>
+      <div class="rendered-output">
+        <h1>Welcome to My Page!</h1>
+      </div>
+    </div>
+
+    <p>
+      <strong>&lt;head&gt;...&lt;/head&gt;</strong> -
+      <span class="definition">Contains meta-information about the document.</span>
+    </p>
+    <div class="tag-example">
+      <code>
+          &lt;head&gt;<br />
+          &nbsp;&nbsp;&lt;title&gt;Learning HTML&lt;/title&gt;<br />
+          &nbsp;&nbsp;&lt;link rel="stylesheet" href="styles.css"&gt;<br />
+          &lt;/head&gt;
+        </code>
+      <!-- No visible rendered output for <head> tag -->
+    </div>
+
+    <p>
+      <strong>&lt;body&gt;...&lt;/body&gt;</strong> -
+      <span class="definition">Encloses the visible content on the web page.</span>
+    </p>
+    <div class="tag-example">
+      <code>
+          &lt;body&gt;<br />
+          &nbsp;&nbsp;&lt;p&gt;This is a paragraph of text on the
+          page.&lt;/p&gt;<br />
+          &lt;/body&gt;
+        </code>
+      <div class="rendered-output">
+        <p>This is a paragraph of text on the page.</p>
+      </div>
+    </div>
+
+    <p>
+      <strong>&lt;title&gt;...&lt;/title&gt;</strong> -
+      <span class="definition">Sets the document title displayed on the browser tab.</span>
+    </p>
+    <div class="tag-example">
+      <code> &lt;title&gt;My Awesome Site&lt;/title&gt; </code>
+      <!-- The title is visible in the browser tab, not on the page -->
+    </div>
+
+    <!-- Examples for h1 to h6 tags -->
+    <h2 class="headerTitle">2. Heading Tags</h2>
+    <p>
+      <strong>&lt;h1&gt; to &lt;h6&gt;</strong> -
+      <span class="definition">Defines headings, where &lt;h1&gt; is the largest and &lt;h6&gt; is
+        the smallest.</span>
+    </p>
+    <div class="tag-example">
+      <code>
+          &lt;h1&gt;Heading 1&lt;/h1&gt;<br />
+          &lt;h2&gt;Heading 2&lt;/h2&gt;<br />
+          &lt;h3&gt;Heading 3&lt;/h3&gt;<br />
+          &lt;h4&gt;Heading 4&lt;/h4&gt;<br />
+          &lt;h5&gt;Heading 5&lt;/h5&gt;<br />
+          &lt;h6&gt;Heading 6&lt;/h6&gt;
+        </code>
+      <div class="rendered-output">
+        <h1 style="text-align: start">Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+      </div>
+    </div>
+
+    <!-- Paragraph Tag Example -->
+    <h2 class="headerTitle">3. Paragraph Tag</h2>
+    <p>
+      <strong>&lt;p&gt;...&lt;/p&gt;</strong> -
+      <span class="definition">Defines a paragraph of text.</span>
+    </p>
+    <div class="tag-example">
+      <code> &lt;p&gt;This is a paragraph of text.&lt;/p&gt; </code>
+      <div class="rendered-output">
+        <p>This is a paragraph of text.</p>
+      </div>
+    </div>
+
+    <!-- Text Formatting -->
+    <h2 class="headerTitle">4. Text Formatting Tags</h2>
+
+    <p>
+      <strong>&lt;b&gt;...&lt;/b&gt;</strong> -
+      <span class="definition">Bold text for emphasis.</span>
+    </p>
+    <div class="tag-example">
+      <code>&lt;b&gt;This is bold text.&lt;/b&gt;</code>
+      <div class="rendered-output">
+        <b>This is bold text.</b>
+      </div>
+    </div>
+
+    <p>
+      <strong>&lt;strong&gt;...&lt;/strong&gt;</strong> -
+      <span class="definition">Indicates important text with semantic emphasis.</span>
+    </p>
+    <div class="tag-example">
+      <code>&lt;strong&gt;This is important text.&lt;/strong&gt;</code>
+      <div class="rendered-output">
+        <strong>This is important text.</strong>
+      </div>
+    </div>
+
+    <p>
+      <strong>&lt;i&gt;...&lt;/i&gt;</strong> -
+      <span class="definition">Italicizes text, often for styling or emphasis.</span>
+    </p>
+    <div class="tag-example">
+      <code>&lt;i&gt;This is italic text.&lt;/i&gt;</code>
+      <div class="rendered-output">
+        <i>This is italic text.</i>
+      </div>
+    </div>
+
+    <p>
+      <strong>&lt;em&gt;...&lt;/em&gt;</strong> -
+      <span class="definition">Emphasizes text in italics, conveying importance.</span>
+    </p>
+    <div class="tag-example">
+      <code>&lt;em&gt;This is emphasized text.&lt;/em&gt;</code>
+      <div class="rendered-output">
+        <em>This is emphasized text.</em>
+      </div>
+    </div>
+
+    <p>
+      <strong>&lt;mark&gt;...&lt;/mark&gt;</strong> -
+      <span class="definition">Highlights or marks text for reference.</span>
+    </p>
+    <div class="tag-example">
+      <code>&lt;mark&gt;This text is marked.&lt;/mark&gt;</code>
+      <div class="rendered-output">
+        <mark>This text is marked.</mark>
+      </div>
+    </div>
+
+    <p>
+      <strong>&lt;small&gt;...&lt;/small&gt;</strong> -
+      <span class="definition">Displays text in a smaller size.</span>
+    </p>
+    <div class="tag-example">
+      <code>&lt;small&gt;This is small text.&lt;/small&gt;</code>
+      <div class="rendered-output">
+        <small>This is small text.</small>
+      </div>
+    </div>
+
+    <p>
+      <strong>&lt;del&gt;...&lt;/del&gt;</strong> -
+      <span class="definition">Marks text as deleted, often with a strikethrough.</span>
+    </p>
+    <div class="tag-example">
+      <code>&lt;del&gt;This text is deleted.&lt;/del&gt;</code>
+      <div class="rendered-output">
+        <del>This text is deleted.</del>
+      </div>
+    </div>
+
+    <p>
+      <strong>&lt;ins&gt;...&lt;/ins&gt;</strong> -
+      <span class="definition">Marks text as inserted, typically underlined.</span>
+    </p>
+    <div class="tag-example">
+      <code>&lt;ins&gt;This text is inserted.&lt;/ins&gt;</code>
+      <div class="rendered-output">
+        <ins>This text is inserted.</ins>
+      </div>
+    </div>
+
+    <p>
+      <strong>&lt;sub&gt;...&lt;/sub&gt;</strong> -
+      <span class="definition">Displays subscript text, often for chemical formulas or
+        footnotes.</span>
+    </p>
+    <div class="tag-example">
+      <code>H&lt;sub&gt;2&lt;/sub&gt;O</code>
+      <div class="rendered-output">H<sub>2</sub>O</div>
+    </div>
+
+    <p>
+      <strong>&lt;sup&gt;...&lt;/sup&gt;</strong> -
+      <span class="definition">Displays superscript text, used for exponents or ordinal
+        indicators.</span>
+    </p>
+    <div class="tag-example">
+      <code>x&lt;sup&gt;2&lt;/sup&gt;</code>
+      <div class="rendered-output">x<sup>2</sup></div>
+    </div>
+
+    <h2 class="headerTitle">5. HTML Links - Hyperlinks</h2>
+
+    <p>
+      <strong>&lt;a&gt;...&lt;/a&gt;</strong> -
+      <span class="definition">Defines a hyperlink, which is used to link from one page to
+        another.</span>
+    </p>
+
+    <p>
+      The basic structure of a hyperlink is an &lt;a &gt tag with an `href`
+      attribute pointing to the desired URL. The text between the opening and
+      closing tags is the clickable part.
+    </p>
+
+    <div class="tag-example">
+      <code>&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;</code>
+      <div class="rendered-output">
+        <a href="https://www.example.com" target="_blank">Visit Example</a>
+      </div>
+    </div>
+
+    <h3>Link Attributes</h3>
+
+    <p>
+      <strong>1. `href`</strong> -
+      <span class="definition">Specifies the URL of the page the link goes to.</span>
+    </p>
+    <div class="tag-example">
+      <code>&lt;a href="https://www.wikipedia.org"&gt;Visit
+          Wikipedia&lt;/a&gt;</code>
+      <div class="rendered-output">
+        <a href="https://www.wikipedia.org" target="_blank">Visit Wikipedia</a>
+      </div>
+    </div>
+
+    <p>
+      <strong>2. `target`</strong> -
+      <span class="definition">Defines where to open the linked document. Common values:</span>
+    </p>
+    <ul>
+      <li><code>_self</code> - Opens in the same tab (default behavior).</li>
+      <li><code>_blank</code> - Opens in a new tab or window.</li>
+      <li><code>_parent</code> - Opens the document in the parent frame.</li>
+      <li>
+        <code>_top</code> - Opens the document in the full body of the window.
+      </li>
+    </ul>
+    <div class="tag-example">
+      <code>&lt;a href="https://www.google.com" target="_blank"&gt;Open in New
+          Tab&lt;/a&gt;</code>
+      <div class="rendered-output">
+        <a href="https://www.google.com" target="_blank">Open in New Tab</a>
+      </div>
+    </div>
+
+    <p>
+      <strong>3. `title`</strong> -
+      <span class="definition">Provides additional information about the link. The text appears when
+        the user hovers over the link.</span>
+    </p>
+    <div class="tag-example">
+      <code>&lt;a href="https://www.example.com" title="Example Website"&gt;Hover
+          for Title&lt;/a&gt;</code>
+      <div class="rendered-output">
+        <a href="https://www.example.com" title="Example Website">Hover for Title</a>
+      </div>
+    </div>
+
+    <p>
+      <strong>4. Email Links</strong> -
+      <span class="definition">Use <code>mailto:</code> in the href attribute to open the user's
+        default email program.</span>
+    </p>
+    <div class="tag-example">
+      <code>&lt;a href="mailto:someone@example.com"&gt;Send Email&lt;/a&gt;</code>
+      <div class="rendered-output">
+        <a href="mailto:someone@example.com">Send Email</a>
+      </div>
+    </div>
+
+    <p>
+      <strong>5. Telephone Links</strong> -
+      <span class="definition">Use <code>tel:</code> in the href attribute to open the phone dialer
+        on mobile devices.</span>
+    </p>
+    <div class="tag-example">
+      <code>&lt;a href="tel:+201227315759"&gt;Call Us&lt;/a&gt;</code>
+      <div class="rendered-output">
+        <a href="tel:+201227315759">Call Us</a>
+      </div>
+    </div>
+
+    <h3>Button as a Link</h3>
+
+    <p>
+      You can use a button as a link by adding some JavaScript to the <code>onclick</code> event. This event will
+      trigger the specified action when the button is clicked, such as navigating to a different page or executing other
+      JavaScript functions.
+    </p>
+
+    <h3>Example</h3>
+
+    <p>
+      In this example, the button will redirect the user to the specified URL when clicked:
+    </p>
+
+    <div class="tag-example">
+      <code>
+    &lt;button onclick="document.location='default.asp'"&gt;HTML Tutorial&lt;/button&gt;
+  </code>
+      <div class="rendered-output">
+        <button onclick="document.location='https://www.example.com'">HTML Tutorial</button>
+      </div>
+    </div>
+
+    <h2 class="headerTitle">6. HTML Images</h2>
+
+    <p>
+      <strong>&lt;img&gt;</strong> -
+      <span class="definition">Defines an image in an HTML document.</span>
+    </p>
+
+    <p>
+      The <code>&lt;img&gt;</code> tag does not have a closing tag. Instead,
+      it uses attributes to specify the image source and other properties.
+    </p>
+
+    <div class="tag-example">
+      <code>&lt;img src="image.jpg" alt="Description of Image"&gt;</code>
+      <div class="rendered-output">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAMFBMVEXx8/XCy9K/yND09vfw8vTP1tzp7O/i5ure4+fO1dvJ0dfT2d/EzNPt7/Lb4OXo6+4FeM7UAAAFL0lEQVR4nO2c24KrIAxFLdha7///t0dxOlWDSiAKztnrbR4G6SoJBKHZA6zJYncgQeCEAicUOKHACQVOKHBCgRMKnFDghAInFDihwAkFTihwQoETCpxQ4IQCJxQ4ocAJBU4ocEKBEwqcUOCEAicUOKHACQVOKHBCgRMKnFDghAInFDihwAkFTihwQoETCpxQ4IQCJxQ4ocAJBU4ot3Oi1KMq64FnWTVq+EueWzlRquqKVn/J+/ezEfdyHydKPYtc62yF1m1Xymq5ixPVdDnx8eslf1eCVu7hRFXFppAfLW39kNJyByeqOTJirGTvRsbKDZyozsHIpKUQsZK8E1Vu55GTrKTuRL0ZRoyVLviZaTtRVctUMuaVOnCoJO1E1WwjxsorbGZO2Qk7br5WuhApKTvpfZWMy5WAoZKuk6b1NhI4VJJ10uRBSsas0ng+OlUnVaARw9NvqCTqRERJpt9eUtJ0IqPEN36SdNIIKRnIPeafFJ0Ep9c5mr+qTdFJ2CRMpLAn5fScqJeokrFWZkoRdaImwtpw2T9iSnnxuiDoRFXda6hK28JzWTA14ryBxKFlTT9iTlT1W57o3Lta96yED8krRieknCw/DDuEP1TnKBlgzMlCTtZDXr+8pIjOwitK5x7JOKFD3mukiE85ix45S5FxYll46prdiv8ekpsU19wv4kS9LV1ouQPlrPzKliIzTuw9YDYiVfgFSxFx8rR+wcyMomSX9HYpTjlFwonqrB3gBc/JyYQjRcRJYe8Ay4l9rMlLcVi8iTjp7Y/nOBHcMjngWEoi4+TUlcmKw9rnxHzCWMqeU/ltkB9JEZl3SusnYmwQn1fm2GgPeiOzZrM9WZfu/3/BNDznYATLOLENffep+JppeMZBMSZUF9N6ljFM7KF3qpTduBZyQj4W53XTiRsEm1L2dr2k9k9W9Rtjq2BrJj9Zyk7pI7bP9lw8kfH+4KIFLGF77Sa3R90Un0POvHNCcYzsLVMk9+2buni1bd9xjMSJHMPmjCz7zov/fidW5GQ7OS/2e8BoRrLtrBfXScTIMVLsk09cJxEjZ8I6+cR1EmG1tsRaDsZ0EjlyDL0leuxOpulD4JTALtfXORRbnqVO1LDOePdtpoclWPsqulL+wt0P0SNnxFKrrp2opmuXl+5OuHA3PSmByDGQ9ezSydYdM+ELd4YUIsdANnoWTva2RSUv3JlnJRE5I2RbY+6kee1+dTrrhC7cPTZeMUdivZnydaIc3tdqqWuI6USOYZlSfp0oxzVlJxNByUSOYZlSPk6cDzqEXy17JDTn/LBMKRlTSRZ4X2giep2zZnEwZHLiGjifFt6BTtKKHMMspUxO2BkvDzoDm1jkGGa7bsaJx0t9XfgrOfuMlhezwsc48RrKufvhyiXXHatg8T2Zkm0eHzluxO8W4pXHKljkXycBt3h9blFdeqyCx2fPOguLbn6qTWsBu+Czxs/CopsdP4kmkx+mcZ8FRrfuWUqSTSYT005keDucW4iXnzRhMg17iYacC6A0VyZzzIQs0pBrUrn22JoXY4Us0pDjaZMzb+dIMX6/Qi0dHSU0XHySz48heqSaOs60vsvlq2mtpzj9OCh/Trgjew7afgLar63d6ec2SmTZm37+UyV7048K+Gmkm7O10A/8aaSbY7sEr8rYvYoNnX4Sr3EuYJVpVc35Ccu/innZbryMJ1n4v9f4N9FZ39XPZ931GYzMGH9VPHYfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADp8Q9+nG9anuOrfAAAAABJRU5ErkJggg=="
+          alt="Placeholder Image" />
+      </div>
+    </div>
+
+    <h3>Image Attributes</h3>
+
+    <p>
+      <strong>1. `src`</strong> -
+      <span class="definition">Specifies the path to the image file.</span>
+    </p>
+    <div class="tag-example">
+      <code>&lt;img src="https://via.placeholder.com/150" alt="Sample
+          Image"&gt;</code>
+      <div class="rendered-output">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAMFBMVEXx8/XCy9K/yND09vfw8vTP1tzp7O/i5ure4+fO1dvJ0dfT2d/EzNPt7/Lb4OXo6+4FeM7UAAAFL0lEQVR4nO2c24KrIAxFLdha7///t0dxOlWDSiAKztnrbR4G6SoJBKHZA6zJYncgQeCEAicUOKHACQVOKHBCgRMKnFDghAInFDihwAkFTihwQoETCpxQ4IQCJxQ4ocAJBU4ocEKBEwqcUOCEAicUOKHACQVOKHBCgRMKnFDghAInFDihwAkFTihwQoETCpxQ4IQCJxQ4ocAJBU4ot3Oi1KMq64FnWTVq+EueWzlRquqKVn/J+/ezEfdyHydKPYtc62yF1m1Xymq5ixPVdDnx8eslf1eCVu7hRFXFppAfLW39kNJyByeqOTJirGTvRsbKDZyozsHIpKUQsZK8E1Vu55GTrKTuRL0ZRoyVLviZaTtRVctUMuaVOnCoJO1E1WwjxsorbGZO2Qk7br5WuhApKTvpfZWMy5WAoZKuk6b1NhI4VJJ10uRBSsas0ng+OlUnVaARw9NvqCTqRERJpt9eUtJ0IqPEN36SdNIIKRnIPeafFJ0Ep9c5mr+qTdFJ2CRMpLAn5fScqJeokrFWZkoRdaImwtpw2T9iSnnxuiDoRFXda6hK28JzWTA14ryBxKFlTT9iTlT1W57o3Lta96yED8krRieknCw/DDuEP1TnKBlgzMlCTtZDXr+8pIjOwitK5x7JOKFD3mukiE85ix45S5FxYll46prdiv8ekpsU19wv4kS9LV1ouQPlrPzKliIzTuw9YDYiVfgFSxFx8rR+wcyMomSX9HYpTjlFwonqrB3gBc/JyYQjRcRJYe8Ay4l9rMlLcVi8iTjp7Y/nOBHcMjngWEoi4+TUlcmKw9rnxHzCWMqeU/ltkB9JEZl3SusnYmwQn1fm2GgPeiOzZrM9WZfu/3/BNDznYATLOLENffep+JppeMZBMSZUF9N6ljFM7KF3qpTduBZyQj4W53XTiRsEm1L2dr2k9k9W9Rtjq2BrJj9Zyk7pI7bP9lw8kfH+4KIFLGF77Sa3R90Un0POvHNCcYzsLVMk9+2buni1bd9xjMSJHMPmjCz7zov/fidW5GQ7OS/2e8BoRrLtrBfXScTIMVLsk09cJxEjZ8I6+cR1EmG1tsRaDsZ0EjlyDL0leuxOpulD4JTALtfXORRbnqVO1LDOePdtpoclWPsqulL+wt0P0SNnxFKrrp2opmuXl+5OuHA3PSmByDGQ9ezSydYdM+ELd4YUIsdANnoWTva2RSUv3JlnJRE5I2RbY+6kee1+dTrrhC7cPTZeMUdivZnydaIc3tdqqWuI6USOYZlSfp0oxzVlJxNByUSOYZlSPk6cDzqEXy17JDTn/LBMKRlTSRZ4X2giep2zZnEwZHLiGjifFt6BTtKKHMMspUxO2BkvDzoDm1jkGGa7bsaJx0t9XfgrOfuMlhezwsc48RrKufvhyiXXHatg8T2Zkm0eHzluxO8W4pXHKljkXycBt3h9blFdeqyCx2fPOguLbn6qTWsBu+Czxs/CopsdP4kmkx+mcZ8FRrfuWUqSTSYT005keDucW4iXnzRhMg17iYacC6A0VyZzzIQs0pBrUrn22JoXY4Us0pDjaZMzb+dIMX6/Qi0dHSU0XHySz48heqSaOs60vsvlq2mtpzj9OCh/Trgjew7afgLar63d6ec2SmTZm37+UyV7048K+Gmkm7O10A/8aaSbY7sEr8rYvYoNnX4Sr3EuYJVpVc35Ccu/innZbryMJ1n4v9f4N9FZ39XPZ931GYzMGH9VPHYfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADp8Q9+nG9anuOrfAAAAABJRU5ErkJggg=="
+          alt="Sample Image" />
+      </div>
+    </div>
+
+    <p>
+      <strong>2. `alt`</strong> -
+      <span class="definition">Provides alternative text for the image if it cannot be displayed. It
+        is also important for accessibility purposes.</span>
+    </p>
+    <div class="tag-example">
+      <code>&lt;img src="image.jpg" alt="A beautiful sunset"&gt;</code>
+      <div class="rendered-output">
+        <img src="https://via.placeholder" alt="A beautiful sunset" />
+      </div>
+    </div>
+
+    <p>
+      <strong>3. `width` and `height`</strong> -
+      <span class="definition">Specifies the width and height of the image. The values can be in
+        pixels or percentages.</span>
+    </p>
+    <div class="tag-example">
+      <code>&lt;img src="image.jpg" width="300" height="200" alt="Sized
+          Image"&gt;</code>
+      <div class="rendered-output">
+        <img src="https://via.placeholder.com/300x200" width="300" height="200" alt="Sized Image" />
+      </div>
+    </div>
+
+    <p>
+      <strong>4. `title`</strong> -
+      <span class="definition">Provides additional information about the image. It appears when the
+        user hovers over the image.</span>
+    </p>
+    <div class="tag-example">
+      <code>&lt;img src="image.jpg" alt="Sample Image" title="This is a sample
+          image"&gt;</code>
+      <div class="rendered-output">
+        <img src="https://via.placeholder.com/150" alt="Sample Image" title="This is a sample image" />
+      </div>
+    </div>
+
+    <h3>Images in Another Folder</h3>
+
+    <p>
+      When you store images in a separate folder, you need to reference them with the correct file path. The
+      <strong>src</strong> attribute will include the folder name in the path to the image file.
+    </p>
+
+    <h3>Example of Storing Images in a Subfolder</h3>
+
+    <p>
+      Let's assume you have an <code>images</code> folder in the same directory as your HTML file. To reference an image
+      inside that folder, you can use the relative path like this:
+    </p>
+
+    <div class="tag-example">
+      <code>&lt;img src="images/photo.jpg" alt="A photo from a folder"&gt;</code>
+      <div class="rendered-output">
+        <img src="https://via.placeholder.com/150" alt="A photo from a folder">
+      </div>
+    </div>
+
+    <h3>Example with a Folder Inside Another Folder</h3>
+
+    <p>
+      You can also have images inside a folder that is inside another folder. The path will be relative to the location
+      of the HTML file.
+    </p>
+
+    <div class="tag-example">
+      <code>&lt;img src="assets/images/photo.jpg" alt="Image in nested folder"&gt;</code>
+      <div class="rendered-output">
+        <img src="https://via.placeholder.com/150" alt="Image in nested folder">
+      </div>
+    </div>
+
+    <h3>Using Absolute Paths</h3>
+
+    <p>
+      If the images are located outside the current project folder or on a different server, you can use an absolute
+      path (full URL) to reference them.
+    </p>
+
+    <div class="tag-example">
+      <code>&lt;img src="https://www.example.com/images/photo.jpg" alt="Image from external server"&gt;</code>
+      <div class="rendered-output">
+        <img src="https://via.placeholder.com/150" alt="Image from external server">
+      </div>
+    </div>
+
+    <h3>Images on Another Server/Website</h3>
+    <p>Some web sites point to an image on another server.
+      To point to an image on another server, you must specify an absolute (full) URL
+      in the src attribute:
+    </p>
+
+    <h3>Animated Images</h3>
+
+    <p>
+      HTML allows animated GIFs:
+    </p>
+
+    <h3>1. GIF Images</h3>
+
+    <p>
+      GIFs (Graphics Interchange Format) are a popular format for simple animations. You can use the
+      <strong>&lt;img&gt;</strong> tag to display animated GIFs.
+    </p>
+
+    <div class="tag-example">
+      <code>&lt;img src="animations/animated-image.gif" alt="Animated GIF"&gt;</code>
+      <div class="rendered-output">
+        <img src="https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif"
+          alt="Animated GIF">
+      </div>
+    </div>
+
+    <h3>Image as a Link</h3>
+
+    <p>
+      You can use an image as a clickable link by embedding the <strong>&lt;img&gt;</strong> tag inside the
+      <strong>&lt;a&gt;</strong> tag. This allows you to turn an image into a clickable element that redirects the user
+      to another page or resource.
+    </p>
+
+    <h3>Example</h3>
+
+    <p>Here’s how to make an image act as a link:</p>
+
+    <div class="tag-example">
+      <code>
+    &lt;a href="default.asp"&gt;<br />
+    &nbsp;&nbsp;&lt;img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"&gt;<br />
+    &lt;/a&gt;
+  </code>
+      <div class="rendered-output">
+        <a href="default.asp">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAMFBMVEXx8/XCy9K/yND09vfw8vTP1tzp7O/i5ure4+fO1dvJ0dfT2d/EzNPt7/Lb4OXo6+4FeM7UAAAFL0lEQVR4nO2c24KrIAxFLdha7///t0dxOlWDSiAKztnrbR4G6SoJBKHZA6zJYncgQeCEAicUOKHACQVOKHBCgRMKnFDghAInFDihwAkFTihwQoETCpxQ4IQCJxQ4ocAJBU4ocEKBEwqcUOCEAicUOKHACQVOKHBCgRMKnFDghAInFDihwAkFTihwQoETCpxQ4IQCJxQ4ocAJBU4ot3Oi1KMq64FnWTVq+EueWzlRquqKVn/J+/ezEfdyHydKPYtc62yF1m1Xymq5ixPVdDnx8eslf1eCVu7hRFXFppAfLW39kNJyByeqOTJirGTvRsbKDZyozsHIpKUQsZK8E1Vu55GTrKTuRL0ZRoyVLviZaTtRVctUMuaVOnCoJO1E1WwjxsorbGZO2Qk7br5WuhApKTvpfZWMy5WAoZKuk6b1NhI4VJJ10uRBSsas0ng+OlUnVaARw9NvqCTqRERJpt9eUtJ0IqPEN36SdNIIKRnIPeafFJ0Ep9c5mr+qTdFJ2CRMpLAn5fScqJeokrFWZkoRdaImwtpw2T9iSnnxuiDoRFXda6hK28JzWTA14ryBxKFlTT9iTlT1W57o3Lta96yED8krRieknCw/DDuEP1TnKBlgzMlCTtZDXr+8pIjOwitK5x7JOKFD3mukiE85ix45S5FxYll46prdiv8ekpsU19wv4kS9LV1ouQPlrPzKliIzTuw9YDYiVfgFSxFx8rR+wcyMomSX9HYpTjlFwonqrB3gBc/JyYQjRcRJYe8Ay4l9rMlLcVi8iTjp7Y/nOBHcMjngWEoi4+TUlcmKw9rnxHzCWMqeU/ltkB9JEZl3SusnYmwQn1fm2GgPeiOzZrM9WZfu/3/BNDznYATLOLENffep+JppeMZBMSZUF9N6ljFM7KF3qpTduBZyQj4W53XTiRsEm1L2dr2k9k9W9Rtjq2BrJj9Zyk7pI7bP9lw8kfH+4KIFLGF77Sa3R90Un0POvHNCcYzsLVMk9+2buni1bd9xjMSJHMPmjCz7zov/fidW5GQ7OS/2e8BoRrLtrBfXScTIMVLsk09cJxEjZ8I6+cR1EmG1tsRaDsZ0EjlyDL0leuxOpulD4JTALtfXORRbnqVO1LDOePdtpoclWPsqulL+wt0P0SNnxFKrrp2opmuXl+5OuHA3PSmByDGQ9ezSydYdM+ELd4YUIsdANnoWTva2RSUv3JlnJRE5I2RbY+6kee1+dTrrhC7cPTZeMUdivZnydaIc3tdqqWuI6USOYZlSfp0oxzVlJxNByUSOYZlSPk6cDzqEXy17JDTn/LBMKRlTSRZ4X2giep2zZnEwZHLiGjifFt6BTtKKHMMspUxO2BkvDzoDm1jkGGa7bsaJx0t9XfgrOfuMlhezwsc48RrKufvhyiXXHatg8T2Zkm0eHzluxO8W4pXHKljkXycBt3h9blFdeqyCx2fPOguLbn6qTWsBu+Czxs/CopsdP4kmkx+mcZ8FRrfuWUqSTSYT005keDucW4iXnzRhMg17iYacC6A0VyZzzIQs0pBrUrn22JoXY4Us0pDjaZMzb+dIMX6/Qi0dHSU0XHySz48heqSaOs60vsvlq2mtpzj9OCh/Trgjew7afgLar63d6ec2SmTZm37+UyV7048K+Gmkm7O10A/8aaSbY7sEr8rYvYoNnX4Sr3EuYJVpVc35Ccu/innZbryMJ1n4v9f4N9FZ39XPZ931GYzMGH9VPHYfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADp8Q9+nG9anuOrfAAAAABJRU5ErkJggg=="
+            alt="HTML tutorial" style="width:42px;height:42px;">
+        </a>
+      </div>
+    </div>
+
+    <h2>Image Floating</h2>
+
+    <p>
+      You can use the CSS <strong>float</strong> property to make an image float to the left or right of the text. This
+      allows text to wrap around the image, creating a more flexible and visually appealing layout.
+    </p>
+
+    <h3>Example</h3>
+
+    <p>
+      In the following example, you will see how an image floats to the right and left of the text:
+    </p>
+
+    <div class="tag-example">
+      <code>
+    &lt;p&gt;<br />
+    &nbsp;&nbsp;&lt;img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;"&gt;<br />
+    &nbsp;&nbsp;The image will float to the right of the text.&lt;/p&gt;<br />
+    &lt;p&gt;<br />
+    &nbsp;&nbsp;&lt;img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;"&gt;<br />
+    &nbsp;&nbsp;The image will float to the left of the text.&lt;/p&gt;
+  </code>
+      <div class="rendered-output">
+        <p><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAMFBMVEXx8/XCy9K/yND09vfw8vTP1tzp7O/i5ure4+fO1dvJ0dfT2d/EzNPt7/Lb4OXo6+4FeM7UAAAFL0lEQVR4nO2c24KrIAxFLdha7///t0dxOlWDSiAKztnrbR4G6SoJBKHZA6zJYncgQeCEAicUOKHACQVOKHBCgRMKnFDghAInFDihwAkFTihwQoETCpxQ4IQCJxQ4ocAJBU4ocEKBEwqcUOCEAicUOKHACQVOKHBCgRMKnFDghAInFDihwAkFTihwQoETCpxQ4IQCJxQ4ocAJBU4ot3Oi1KMq64FnWTVq+EueWzlRquqKVn/J+/ezEfdyHydKPYtc62yF1m1Xymq5ixPVdDnx8eslf1eCVu7hRFXFppAfLW39kNJyByeqOTJirGTvRsbKDZyozsHIpKUQsZK8E1Vu55GTrKTuRL0ZRoyVLviZaTtRVctUMuaVOnCoJO1E1WwjxsorbGZO2Qk7br5WuhApKTvpfZWMy5WAoZKuk6b1NhI4VJJ10uRBSsas0ng+OlUnVaARw9NvqCTqRERJpt9eUtJ0IqPEN36SdNIIKRnIPeafFJ0Ep9c5mr+qTdFJ2CRMpLAn5fScqJeokrFWZkoRdaImwtpw2T9iSnnxuiDoRFXda6hK28JzWTA14ryBxKFlTT9iTlT1W57o3Lta96yED8krRieknCw/DDuEP1TnKBlgzMlCTtZDXr+8pIjOwitK5x7JOKFD3mukiE85ix45S5FxYll46prdiv8ekpsU19wv4kS9LV1ouQPlrPzKliIzTuw9YDYiVfgFSxFx8rR+wcyMomSX9HYpTjlFwonqrB3gBc/JyYQjRcRJYe8Ay4l9rMlLcVi8iTjp7Y/nOBHcMjngWEoi4+TUlcmKw9rnxHzCWMqeU/ltkB9JEZl3SusnYmwQn1fm2GgPeiOzZrM9WZfu/3/BNDznYATLOLENffep+JppeMZBMSZUF9N6ljFM7KF3qpTduBZyQj4W53XTiRsEm1L2dr2k9k9W9Rtjq2BrJj9Zyk7pI7bP9lw8kfH+4KIFLGF77Sa3R90Un0POvHNCcYzsLVMk9+2buni1bd9xjMSJHMPmjCz7zov/fidW5GQ7OS/2e8BoRrLtrBfXScTIMVLsk09cJxEjZ8I6+cR1EmG1tsRaDsZ0EjlyDL0leuxOpulD4JTALtfXORRbnqVO1LDOePdtpoclWPsqulL+wt0P0SNnxFKrrp2opmuXl+5OuHA3PSmByDGQ9ezSydYdM+ELd4YUIsdANnoWTva2RSUv3JlnJRE5I2RbY+6kee1+dTrrhC7cPTZeMUdivZnydaIc3tdqqWuI6USOYZlSfp0oxzVlJxNByUSOYZlSPk6cDzqEXy17JDTn/LBMKRlTSRZ4X2giep2zZnEwZHLiGjifFt6BTtKKHMMspUxO2BkvDzoDm1jkGGa7bsaJx0t9XfgrOfuMlhezwsc48RrKufvhyiXXHatg8T2Zkm0eHzluxO8W4pXHKljkXycBt3h9blFdeqyCx2fPOguLbn6qTWsBu+Czxs/CopsdP4kmkx+mcZ8FRrfuWUqSTSYT005keDucW4iXnzRhMg17iYacC6A0VyZzzIQs0pBrUrn22JoXY4Us0pDjaZMzb+dIMX6/Qi0dHSU0XHySz48heqSaOs60vsvlq2mtpzj9OCh/Trgjew7afgLar63d6ec2SmTZm37+UyV7048K+Gmkm7O10A/8aaSbY7sEr8rYvYoNnX4Sr3EuYJVpVc35Ccu/innZbryMJ1n4v9f4N9FZ39XPZ931GYzMGH9VPHYfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADp8Q9+nG9anuOrfAAAAABJRU5ErkJggg=="
+            alt="Smiley face" style="float:right;width:42px;height:42px;">The image will float to the right of the text.
+        </p>
+        <p><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAMFBMVEXx8/XCy9K/yND09vfw8vTP1tzp7O/i5ure4+fO1dvJ0dfT2d/EzNPt7/Lb4OXo6+4FeM7UAAAFL0lEQVR4nO2c24KrIAxFLdha7///t0dxOlWDSiAKztnrbR4G6SoJBKHZA6zJYncgQeCEAicUOKHACQVOKHBCgRMKnFDghAInFDihwAkFTihwQoETCpxQ4IQCJxQ4ocAJBU4ocEKBEwqcUOCEAicUOKHACQVOKHBCgRMKnFDghAInFDihwAkFTihwQoETCpxQ4IQCJxQ4ocAJBU4ot3Oi1KMq64FnWTVq+EueWzlRquqKVn/J+/ezEfdyHydKPYtc62yF1m1Xymq5ixPVdDnx8eslf1eCVu7hRFXFppAfLW39kNJyByeqOTJirGTvRsbKDZyozsHIpKUQsZK8E1Vu55GTrKTuRL0ZRoyVLviZaTtRVctUMuaVOnCoJO1E1WwjxsorbGZO2Qk7br5WuhApKTvpfZWMy5WAoZKuk6b1NhI4VJJ10uRBSsas0ng+OlUnVaARw9NvqCTqRERJpt9eUtJ0IqPEN36SdNIIKRnIPeafFJ0Ep9c5mr+qTdFJ2CRMpLAn5fScqJeokrFWZkoRdaImwtpw2T9iSnnxuiDoRFXda6hK28JzWTA14ryBxKFlTT9iTlT1W57o3Lta96yED8krRieknCw/DDuEP1TnKBlgzMlCTtZDXr+8pIjOwitK5x7JOKFD3mukiE85ix45S5FxYll46prdiv8ekpsU19wv4kS9LV1ouQPlrPzKliIzTuw9YDYiVfgFSxFx8rR+wcyMomSX9HYpTjlFwonqrB3gBc/JyYQjRcRJYe8Ay4l9rMlLcVi8iTjp7Y/nOBHcMjngWEoi4+TUlcmKw9rnxHzCWMqeU/ltkB9JEZl3SusnYmwQn1fm2GgPeiOzZrM9WZfu/3/BNDznYATLOLENffep+JppeMZBMSZUF9N6ljFM7KF3qpTduBZyQj4W53XTiRsEm1L2dr2k9k9W9Rtjq2BrJj9Zyk7pI7bP9lw8kfH+4KIFLGF77Sa3R90Un0POvHNCcYzsLVMk9+2buni1bd9xjMSJHMPmjCz7zov/fidW5GQ7OS/2e8BoRrLtrBfXScTIMVLsk09cJxEjZ8I6+cR1EmG1tsRaDsZ0EjlyDL0leuxOpulD4JTALtfXORRbnqVO1LDOePdtpoclWPsqulL+wt0P0SNnxFKrrp2opmuXl+5OuHA3PSmByDGQ9ezSydYdM+ELd4YUIsdANnoWTva2RSUv3JlnJRE5I2RbY+6kee1+dTrrhC7cPTZeMUdivZnydaIc3tdqqWuI6USOYZlSfp0oxzVlJxNByUSOYZlSPk6cDzqEXy17JDTn/LBMKRlTSRZ4X2giep2zZnEwZHLiGjifFt6BTtKKHMMspUxO2BkvDzoDm1jkGGa7bsaJx0t9XfgrOfuMlhezwsc48RrKufvhyiXXHatg8T2Zkm0eHzluxO8W4pXHKljkXycBt3h9blFdeqyCx2fPOguLbn6qTWsBu+Czxs/CopsdP4kmkx+mcZ8FRrfuWUqSTSYT005keDucW4iXnzRhMg17iYacC6A0VyZzzIQs0pBrUrn22JoXY4Us0pDjaZMzb+dIMX6/Qi0dHSU0XHySz48heqSaOs60vsvlq2mtpzj9OCh/Trgjew7afgLar63d6ec2SmTZm37+UyV7048K+Gmkm7O10A/8aaSbY7sEr8rYvYoNnX4Sr3EuYJVpVc35Ccu/innZbryMJ1n4v9f4N9FZ39XPZ931GYzMGH9VPHYfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADp8Q9+nG9anuOrfAAAAABJRU5ErkJggg=="
+            alt="Smiley face" style="float:left;width:42px;height:42px;">The image will float to the left of the text.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      &copy; 2024 Web Programming Course. All Rights Reserved. Eng/Peter
+      George :: 01227315759
+    </div>
+  </div>
+</body>
+
+</html>
