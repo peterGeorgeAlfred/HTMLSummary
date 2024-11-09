@@ -86,6 +86,14 @@
   <div class="container">
     <h1>HTML Tags Guide</h1>
 
+    <h2 class="headerTitle">The
+      <!DOCTYPE html> Declaration
+    </h2>
+
+    <p>
+      The <strong><code>&lt;!DOCTYPE html&gt;</code></strong> declaration defines the document type and version of HTML
+      being used. Specifically, it tells the browser that the document is an <strong>HTML5 document</strong> .
+    </p>
     <h2 class="headerTitle">1. HTML Structure Tags</h2>
     <p>
       <strong>&lt;html&gt;...&lt;/html&gt;</strong> -
@@ -147,6 +155,37 @@
       <!-- The title is visible in the browser tab, not on the page -->
     </div>
 
+    <p>
+      <strong>lang Attribute</strong> -
+      <span class="definition">You should always include the lang attribute inside the &lt;html&gt; tag, to declare the 
+        language of the Web page. This is meant to assist search engines and browsers.</span>
+    </p>
+    <div class="tag-example">
+      <code>
+          &lt;html lang="en" &gt; &lt;/html&gt;<br />         
+        </code>
+      <div class="rendered-output">
+        The following example specifies English as the language:
+      </div>
+    </div>
+
+    <p>
+      <span class="definition"> Country codes can also be added to the language code in the lang attribute. So, the 
+        first two characters define the language of the HTML page, and the last two 
+        characters define the country.</span>
+    </p>
+   <div class="tag-example">
+      <code>
+          &lt;html lang="en-US" &gt; &lt;/html&gt;<br />         
+        </code>
+      <div class="rendered-output">
+        The following example specifies English as the language and United States as the 
+        country:
+      </div>
+    </div>
+
+    
+
     <!-- Examples for h1 to h6 tags -->
     <h2 class="headerTitle">2. Heading Tags</h2>
     <p>
@@ -183,6 +222,27 @@
       <code> &lt;p&gt;This is a paragraph of text.&lt;/p&gt; </code>
       <div class="rendered-output">
         <p>This is a paragraph of text.</p>
+      </div>
+    </div>
+
+    <strong>Single or Double Quotes?</strong>
+    <P>Double quotes around attribute values are the most common in HTML, but 
+      single quotes can also be used.
+      In some situations, when the attribute value itself contains double quotes, it 
+      is necessary to use single quotes:
+    </P>
+
+    <div class="tag-example">
+      <code> &lt;p title='John "ShotGun" Nelson' &gt;USING DOUBLE Quotes&lt;/p&gt; </code>
+      <div class="rendered-output">
+        <p title='John "ShotGun" Nelson'>USING DOUBLE Quotes</p>
+      </div>
+    </div>
+
+    <div class="tag-example">
+      <code> &lt;p title="John 'ShotGun' Nelson" &gt;USING SINGLE Quotes&lt;/p&gt; </code>
+      <div class="rendered-output">
+        <p title="John 'ShotGun' Nelson">USING SINGLE Quotes</p>
       </div>
     </div>
 
@@ -804,7 +864,8 @@
     <h2 class="headerTitle">7-3. CSS Padding</h2>
 
     <p>
-      The <strong>CSS <code>padding</code></strong> property defines the <strong>space between</strong> between the content of
+      The <strong>CSS <code>padding</code></strong> property defines the <strong>space between</strong> between the
+      content of
       an element (such
       as text) and its border. It helps control the inner spacing of an element, making the content less cramped and
       improving readability and design.
@@ -825,7 +886,8 @@
     <h2 class="headerTitle">7-4. CSS Margin</h2>
 
     <p>
-      The <strong>CSS <code>margin</code></strong> property defines the <strong>space outside</strong> the border of an element. It
+      The <strong>CSS <code>margin</code></strong> property defines the <strong>space outside</strong> the border of an
+      element. It
       creates space between an element and its surrounding elements. The margin is used to separate elements and control
       their spacing on the page.
     </p>
@@ -838,6 +900,8 @@
         <div style="margin: 50px; border: 2px solid powderblue;">This div has 50px margin on all sides.</div>
       </div>
     </div>
+
+
 
 
     <div class="footer">
