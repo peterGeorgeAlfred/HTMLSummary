@@ -624,6 +624,168 @@
       </div>
     </div>
 
+    <h2 class="headerTitle">7. Using CSS</h2>
+
+    <p>
+      CSS can be added to HTML documents in 3 ways:
+    </p>
+    <ul>
+      <li><strong>Inline</strong> - by using the <code>style</code> attribute inside HTML elements.</li>
+      <li><strong>Internal</strong> - by using a <code>&lt;style&gt;</code> element in the <code>&lt;head&gt;</code>
+        section.</li>
+      <li><strong>External</strong> - by using a <code>&lt;link&gt;</code> element to link to an external CSS file.</li>
+    </ul>
+
+    <h3>1. Inline CSS</h3>
+    <p>
+      Inline CSS is used by adding the <code>style</code> attribute directly to HTML elements. It is usually used for
+      quick styling of individual elements.
+    </p>
+    <div class="tag-example">
+      <code>
+    &lt;p style="color: red; font-size: 20px;"&gt;This is a red colored text.&lt;/p&gt;
+  </code>
+      <div class="rendered-output">
+        <p style="color: red; font-size: 20px;">This is a red colored text.</p>
+      </div>
+    </div>
+
+    <h3>2. Internal CSS</h3>
+    <p>
+      Internal CSS is used by placing styles within a <code>&lt;style&gt;</code> element inside the
+      <code>&lt;head&gt;</code> section. It applies styles to the entire document.
+    </p>
+    <div class="tag-example">
+      <code>
+    &lt;style&gt;<br />
+    &nbsp;&nbsp;body {<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;color: #333;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;font-family: Arial, sans-serif;<br />
+    &nbsp;&nbsp;}<br />
+    &lt;/style&gt;
+  </code>
+      <div class="rendered-output">
+        <style>
+          body {
+            color: #333;
+            font-family: Arial, sans-serif;
+          }
+        </style>
+      </div>
+    </div>
+
+    <h3>3. External CSS</h3>
+    <p>
+      External CSS is the most efficient way to style your web pages, especially when you have multiple pages. It
+      involves linking an external CSS file to your HTML document using the <code>&lt;link&gt;</code> element.
+    </p>
+    <div class="tag-example">
+      <code>
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+  </code>
+      <div class="rendered-output">
+        <!-- External link to CSS file -->
+        <!-- This code will be linked to an external stylesheet named "styles.css" -->
+      </div>
+    </div>
+
+    <p>
+      In this method, all styling rules are kept in a separate file, making your HTML cleaner and more manageable. It
+      also allows you to reuse the same stylesheet across multiple HTML pages.
+    </p>
+
+    <h2 class="headerTitle">7-1. CSS Colors, Fonts, and Sizes</h2>
+
+    <p>
+      Here, we will demonstrate some commonly used CSS properties. You will learn more about them later.
+    </p>
+
+    <h3>1. CSS Color</h3>
+    <p>
+      The <strong>CSS <code>color</code></strong> property defines the text color to be used. You can specify color in
+      several ways: by name, HEX, RGB, RGBA, HSL, and HSLA.
+    </p>
+    <ul>
+      <li><strong>Color Names:</strong> Common colors like <code>red</code>, <code>blue</code>, <code>green</code>, etc.
+      </li>
+      <li><strong>HEX:</strong> A 6-digit hexadecimal code representing the color, e.g., <code>#ff5733</code>.</li>
+      <li><strong>RGB:</strong> Defines colors in terms of their Red, Green, and Blue components, e.g.,
+        <code>rgb(255, 99, 71)</code>.
+      </li>
+      <li><strong>RGBA:</strong> Like RGB but includes an alpha (opacity) value, e.g.,
+        <code>rgba(255, 99, 71, 0.5)</code>.
+      </li>
+    </ul>
+
+    <div class="tag-example">
+      <code>
+    &lt;p style="color: #ff0000;"&gt;This is a text with a HEX color.&lt;/p&gt;
+  </code>
+      <div class="rendered-output">
+        <p style="color: #ff0000;">This is a text with a HEX color.</p>
+      </div>
+    </div>
+
+    <h3>2. CSS Font Family</h3>
+    <p>
+      The <strong>CSS <code>font-family</code></strong> property defines the font to be used for text. You can specify a
+      specific font or a generic font family.
+    </p>
+    <ul>
+      <li><strong>Specific Fonts:</strong> e.g., <code>Arial</code>, <code>Verdana</code>, <code>Times New Roman</code>.
+      </li>
+      <li><strong>Generic Font Families:</strong> Categories like <code>serif</code>, <code>sans-serif</code>,
+        <code>monospace</code>, etc.
+      </li>
+      <li>It's common to specify a list of fonts, allowing the browser to fall back to another if the first is
+        unavailable.</li>
+    </ul>
+
+    <div class="tag-example">
+      <code>
+    &lt;p style="font-family: 'Arial', sans-serif;"&gt;This text uses the Arial font.&lt;/p&gt;
+  </code>
+      <div class="rendered-output">
+        <p style="font-family: 'Arial', sans-serif;">This text uses the Arial font.</p>
+      </div>
+    </div>
+
+    <h3>3. CSS Font Size</h3>
+    <p>
+      The <strong>CSS <code>font-size</code></strong> property defines the text size to be used. You can set the font
+      size using various units like pixels, em, rem, percentages, etc.
+    </p>
+    <ul>
+      <li><strong>Pixels (px):</strong> A fixed unit for setting font size, e.g., <code>font-size: 16px;</code>.</li>
+      <li><strong>Percentage (%):</strong> A relative unit based on the parent element's font size, e.g.,
+        <code>font-size: 120%;</code>.
+      </li>
+    </ul>
+
+    <div class="tag-example">
+      <code>
+    &lt;p style="font-size: 20px;"&gt;This is a text with a font size of 20px.&lt;/p&gt;
+  </code>
+      <div class="rendered-output">
+        <p style="font-size: 20px;">This is a text with a font size of 20px.</p>
+      </div>
+    </div>
+
+    <div class="tag-example">
+      <code>
+    &lt;p style="font-size: 200%;"&gt;This text uses a relative font size of 200%.&lt;/p&gt;
+  </code>
+      <div class="rendered-output">
+        <p style="font-size: 200%;">This text uses a relative font size of 200%.</p>
+      </div>
+    </div>
+
+    <p>
+      These three properties (color, font-family, and font-size) are fundamental to styling text in HTML. They allow you
+      to create readable and visually appealing text on your web pages.
+    </p>
+
+
     <div class="footer">
       &copy; 2024 Web Programming Course. All Rights Reserved. Eng/Peter
       George :: 01227315759
